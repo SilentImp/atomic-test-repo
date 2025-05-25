@@ -15,6 +15,18 @@
           <li><a class="navigation-link" href="services.html">Services</a></li>
         </ul>
       </nav>
+      <button class="login-form-button" type="button" command="toggle-popover" commandfor="login-form">login</button>
+      <form id="login-form" popover action="/login" method="post">
+        <label for="email">
+          Email
+          <input type="email" name="email" placeholder="email@gmail.com" autocomplete="email username">
+        </label>
+        <label for="email">
+          Password
+          <input type="password" name="password" placeholder="Eagle" autocomplete="current-password">
+        </label>
+        <button type="button">Login</button>
+      </form>
     </header>
   </body>
 </html>
